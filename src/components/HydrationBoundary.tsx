@@ -7,7 +7,12 @@ interface HydrationBoundaryProps {
   children: ReactNode;
 }
 
-function ErrorFallback({ error, resetErrorBoundary }: any) {
+interface ErrorFallbackProps {
+  error: Error;
+  resetErrorBoundary: () => void;
+}
+
+function ErrorFallback({ error }: ErrorFallbackProps) {
   console.warn('Hydration error caught:', error);
   return (
     <div>

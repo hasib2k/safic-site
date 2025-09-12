@@ -1,12 +1,18 @@
 "use client";
 import { useState, useEffect } from "react";
-import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaGlobe, FaClock, FaFacebookF, FaTwitter, FaLinkedinIn, FaWhatsapp, FaInstagram } from "react-icons/fa";
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaGlobe, FaClock, FaFacebookF, FaLinkedinIn, FaWhatsapp, FaInstagram } from "react-icons/fa";
 
 function ExpandableNewsCard() {
   const [expanded, setExpanded] = useState(false);
   return (
     <article className="card" key="latest-news">
-      <div className="media"><img src="/roof.jpg" alt="Roof Casting Work Begins" className="cover" /></div>
+      <div className="media"><img src="/            <h4 style={{ marginTop: 14, marginBottom: 8 }}>Programs at SAFIC</h4>
+            <div style={{ display: 'grid', gap: 8, fontSize: 14, color: '#374151' }}>
+              <div>• Quran &amp; Tajweed classes (children &amp; adults)</div>
+              <div>• Weekly Jumu&apos;ah with short lecture (Khutbah) and Tafsir study circles</div>
+              <div>• Youth mentoring, leadership training, and community volunteer days</div>
+              <div>• Women&apos;s study groups, family counseling and social support services</div>
+            </div>g" alt="Roof Casting Work Begins" className="cover" /></div>
       <div className="card-body">
         <h4>Roof Casting Work Begins at Sultanpur Al-Falah Islamic Center</h4>
         <p>September 11, 2025 (Wednesday)</p>
@@ -406,7 +412,7 @@ export default function Home() {
             <h4 style={{ marginTop: 14, marginBottom: 8 }}>Programs at SAFIC</h4>
             <div style={{ display: 'grid', gap: 8, fontSize: 14, color: '#374151' }}>
               <div>• Quran & Tajweed classes (children & adults)</div>
-              <div>• Weekly Jumu'ah with short lecture (Khutbah) and Tafsir study circles</div>
+              <div>• Weekly Jumu&apos;ah with short lecture (Khutbah) and Tafsir study circles</div>
               <div>• Youth mentoring, leadership training, and community volunteer days</div>
               <div>• Women’s study groups, family counseling and social support services</div>
             </div>
@@ -454,7 +460,7 @@ export default function Home() {
             </div>
             <div style={{ height: 2, width: 90, background: 'linear-gradient(90deg, rgba(193,146,51,0.9), rgba(193,146,51,0.3))', margin: '10px auto 18px' }} />
             <p style={{ margin: '10px auto 0', color: '#6b7280', maxWidth: 720, fontSize: '1.05rem', lineHeight: 1.7 }}>
-              Daily prayer schedules and Jumu'ah khutbah information for Sultanpur Al-Falah Islamic Center.
+              Daily prayer schedules and Jumu&apos;ah khutbah information for Sultanpur Al-Falah Islamic Center.
             </p>
           </div>
 
@@ -556,7 +562,7 @@ export default function Home() {
 
           {/* Right: Khutbah / Announcement card */}
           <aside className="khutbah-card" style={{ background: '#fff', color: '#142235', borderRadius: 12, padding: '38px 32px', boxShadow: '0 8px 24px rgba(16,24,40,0.08)', border: '1px solid rgba(16,24,40,0.04)', minWidth: 0, marginTop: 0, flex: 1, display: 'flex', flexDirection: 'column', alignSelf: 'stretch', alignItems: 'center', justifyContent: 'space-between', gap: 24, minHeight: 520, width: '100%', height: '100%' }}>
-            <h4 style={{ margin: '0 0 14px 0', color: '#142235', fontSize: 18, letterSpacing: 0.2 }}>Khutib of the Next Jumu'ah</h4>
+            <h4 style={{ margin: '0 0 14px 0', color: '#142235', fontSize: 18, letterSpacing: 0.2 }}>Khutib of the Next Jumu&apos;ah</h4>
             <div style={{ display: 'flex', gap: 16, alignItems: 'center', marginBottom: 8 }}>
               <div style={{ width: 76, height: 76, borderRadius: 8, overflow: 'hidden', marginRight: 8 }}>
                 <img src="/imam.jpg" alt="Speaker" className="cover" />
@@ -595,7 +601,7 @@ export default function Home() {
             </div>
             <div style={{ height: 1, width: 80, background: 'linear-gradient(90deg, rgba(193,146,51,0.9), rgba(193,146,51,0.3))', margin: '6px auto 12px' }} />
             <p style={{ margin: '6px auto 0', color: '#6b7280', maxWidth: 720, fontSize: '0.98rem' }}>
-              Join our regular programs and special events — from weekly Jumu'ah prayers and lectures to community service and learning workshops. Everyone is welcome.
+              Join our regular programs and special events — from weekly Jumu&apos;ah prayers and lectures to community service and learning workshops. Everyone is welcome.
             </p>
           </div>
 
@@ -603,11 +609,11 @@ export default function Home() {
             <article style={{ background: '#fff', borderRadius: 10, overflow: 'hidden', boxShadow: '0 8px 24px rgba(16,24,40,0.06)', display: 'flex', flexDirection: 'column' }}>
               <div style={{ height: 160, overflow: 'hidden' }}><img src="https://picsum.photos/seed/mosque/800/520" alt="Jumu'ah" className="cover" /></div>
               <div style={{ padding: 14, display: 'flex', flexDirection: 'column', gap: 8 }}>
-                <h4 style={{ margin: 0 }}>Weekly Jumu'ah & Special Lecture</h4>
+                <h4 style={{ margin: 0 }}>Weekly Jumu&apos;ah &amp; Special Lecture</h4>
                 <div style={{ display: 'flex', gap: 12, alignItems: 'center', color: '#6b7280', fontSize: 13 }}>
                   <span style={{ display: 'flex', alignItems: 'center', gap: 6 }}><FaClock style={{ color: '#c19233' }} /> Fri, Aug 18, 2025 — 12:20 PM</span>
                 </div>
-                <p style={{ margin: 0, color: '#374151' }}>Join our congregational Jumu'ah prayer followed by a short lecture on community service and spiritual development.</p>
+                <p style={{ margin: 0, color: '#374151' }}>Join our congregational Jumu&apos;ah prayer followed by a short lecture on community service and spiritual development.</p>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: 6 }}>
                   <span style={{ display: 'flex', alignItems: 'center', gap: 8, color: '#6b7280', fontSize: 13 }}><FaMapMarkerAlt style={{ color: '#c19233' }} /> Sultanpur Al-Falah Center</span>
                   <a className="btn btn-gold" href="#" style={{ padding: '6px 10px' }}>Details</a>
