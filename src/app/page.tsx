@@ -707,19 +707,19 @@ export default function Home() {
                   <CopyPayment
                     icon="/bkash.png"
                     label="bKash"
-                    number="+880 1706-776711"
+                    number="+880 1716-939119"
                     type="Personal"
                   />
                   <CopyPayment
                     icon="/nagad.png"
                     label="Nagad"
-                    number="+880 1706-776711"
+                    number="+880 1716-939119"
                     type="Personal"
                   />
                   <CopyPayment
                     icon="/rocket.png"
                     label="Rocket"
-                    number="+880 1706-776711"
+                    number="+880 1716-939119"
                     type="Personal"
                   />
                 </div>
@@ -822,7 +822,7 @@ export default function Home() {
             }}>
               <div style={{ height: 200, overflow: 'hidden', background: '#f8fafc' }}>
                 <img 
-                  src="/chairman.jpg" 
+                  src="/hero3.jpg" 
                   alt="Chairman" 
                   style={{ 
                     width: '100%', 
