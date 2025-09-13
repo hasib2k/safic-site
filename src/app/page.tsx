@@ -611,7 +611,7 @@ export default function Home() {
                 </div>
                 <p style={{ margin: 0, color: '#374151' }}>Join our congregational Jumu&apos;ah prayer followed by a short lecture on community service and spiritual development.</p>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: 6 }}>
-                  <span style={{ display: 'flex', alignItems: 'center', gap: 8, color: '#6b7280', fontSize: 13 }}><FaMapMarkerAlt style={{ color: '#c19233' }} /> Sultanpur Al-Falah Center</span>
+                  <span style={{ display: 'flex', alignItems: 'center', gap: 8, color: '#6b7280', fontSize: 13 }}><FaMapMarkerAlt style={{ color: '#c19233' }} /> Sultanpur Al-Falah Islamic Center</span>
                   <a className="btn btn-gold" href="#" style={{ padding: '6px 10px' }}>Details</a>
                 </div>
               </div>
@@ -626,7 +626,7 @@ export default function Home() {
                 </div>
                 <p style={{ margin: 0, color: '#374151' }}>Volunteers gather to tidy the mosque grounds, assist with minor repairs, and prepare the center for upcoming events. All ages welcome.</p>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: 6 }}>
-                  <span style={{ display: 'flex', alignItems: 'center', gap: 8, color: '#6b7280', fontSize: 13 }}><FaMapMarkerAlt style={{ color: '#c19233' }} /> Sultanpur neighborhood</span>
+                  <span style={{ display: 'flex', alignItems: 'center', gap: 8, color: '#6b7280', fontSize: 13 }}><FaMapMarkerAlt style={{ color: '#c19233' }} /> Sultanpur Al-Falah Islamic Center</span>
                   <a className="btn btn-gold" href="#" style={{ padding: '6px 10px' }}>Sign up</a>
                 </div>
               </div>
@@ -641,7 +641,7 @@ export default function Home() {
                 </div>
                 <p style={{ margin: 0, color: '#374151' }}>A short workshop for new learners covering basic tajweed rules and recitation techniques. Free to attend — registration recommended.</p>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: 6 }}>
-                  <span style={{ display: 'flex', alignItems: 'center', gap: 8, color: '#6b7280', fontSize: 13 }}><FaMapMarkerAlt style={{ color: '#c19233' }} /> Community Hall, SAFIC</span>
+                  <span style={{ display: 'flex', alignItems: 'center', gap: 8, color: '#6b7280', fontSize: 13 }}><FaMapMarkerAlt style={{ color: '#c19233' }} /> Sultanpur Al-Falah Islamic Center</span>
                   <a className="btn btn-gold" href="#" style={{ padding: '6px 10px' }}>Register</a>
                 </div>
               </div>
