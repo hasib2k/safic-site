@@ -70,7 +70,7 @@ export function NextKhutbah() {
   return (
     <div>
       <div style={{ color: '#6b7280' }}>{dateStr} • {timeStr}</div>
-      <div style={{ marginTop: 8, background: '#fff7eb', padding: 8, borderRadius: 6, color: '#b5842d', display: 'inline-block' }}>
+      <div style={{ marginTop: 8, background: '#fff7eb', padding: 8, borderRadius: 6, color: '#000000', display: 'inline-block' }}>
         <strong>Khutbah begins at {timeStr}</strong>
       </div>
       <div style={{ marginTop: 8, color: '#6b7280', fontSize: 13 }} aria-live="polite">

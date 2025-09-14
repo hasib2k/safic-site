@@ -32,7 +32,6 @@ export default function News() {
         </div>
 
         <div className="center" style={{ marginTop: 20, textAlign: 'center' }}>
-          <a className="btn btn-gold" href="#">View all</a>
         </div>
       </div>
     </section>

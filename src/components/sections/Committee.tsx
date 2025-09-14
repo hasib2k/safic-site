@@ -33,7 +33,7 @@ export default function Committee() {
           }}>
             <div style={{ height: 200, overflow: 'hidden', background: '#f8fafc' }}>
               <img 
-                src="/hero3.jpg" 
+                src="/chairman.jpg" 
                 alt="Chairman" 
                 style={{ 
                   width: '100%', 
@@ -65,7 +65,7 @@ export default function Committee() {
               </p>
               <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
                 <a 
-                  href="tel:+8801706776711" 
+                  href="tel:+88017169393119" 
                   style={{ 
                     color: '#c19233', 
                     textDecoration: 'none', 
@@ -80,7 +80,7 @@ export default function Committee() {
                     transition: 'background 0.2s'
                   }}
                 >
-                  <FaPhoneAlt style={{ fontSize: 12 }} /> +880 1706-776711
+                  <FaPhoneAlt style={{ fontSize: 12 }} /> +880 1716-9393119
                 </a>
                 <a 
                   href="mailto:chairman@safic.org" 

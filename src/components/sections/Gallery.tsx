@@ -22,36 +22,63 @@ export default function Gallery() {
         </div>
 
         <div style={{ 
-          display: 'grid', 
-          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', 
-          gap: 20,
-          justifyItems: 'center'
+          position: 'relative',
+          width: '100%',
+          overflow: 'hidden',
         }}>
-          {images.map((image, index) => (
-            <div 
-              key={index}
-              style={{ 
-                borderRadius: 12, 
-                overflow: 'hidden', 
-                boxShadow: '0 10px 25px rgba(0,0,0,0.1)'
-              }}
-            >
-              <img 
-                src={image} 
-                alt={`Gallery image ${index + 1}`}
+          <div
+            className="gallery-marquee"
+            style={{
+              display: 'flex',
+              flexDirection: 'row',
+              flexWrap: 'nowrap',
+              gap: 12,
+              alignItems: 'center',
+              minHeight: 0,
+              animation: 'gallery-scroll 30s linear infinite',
+              width: 'max-content',
+            }}
+          >
+            {images.concat(images).map((image, index) => (
+              <div 
+                key={index}
                 style={{ 
-                  width: '100%', 
-                  height: '250px', 
-                  objectFit: 'cover',
-                  display: 'block'
+                  borderRadius: 8,
+                  overflow: 'hidden', 
+                  boxShadow: '0 4px 12px rgba(0,0,0,0.08)',
+                  minWidth: 110,
+                  width: 110,
+                  height: 80,
+                  flex: '0 0 auto',
+                  margin: 0
                 }}
-                onError={(e) => {
-                  const target = e.currentTarget as HTMLImageElement;
-                  target.src = '/hero.jpg';
-                }}
-              />
-            </div>
-          ))}
+              >
+                <img 
+                  src={image} 
+                  alt={`Gallery image ${index + 1}`}
+                  style={{ 
+                    width: '100%', 
+                    height: '100%', 
+                    objectFit: 'cover',
+                    display: 'block'
+                  }}
+                  onError={(e) => {
+                    const target = e.currentTarget as HTMLImageElement;
+                    target.src = '/hero.jpg';
+                  }}
+                />
+              </div>
+            ))}
+          </div>
+          <style>{`
+            @keyframes gallery-scroll {
+              0% { transform: translateX(0); }
+              100% { transform: translateX(-50%); }
+            }
+            .gallery-marquee:hover {
+              animation-play-state: paused;
+            }
+          `}</style>
         </div>
       </div>
     </section>

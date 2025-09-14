@@ -17,7 +17,7 @@ export default function Donation() {
           {/* Group into Mobile Banking and Bank Transfer for clarity */}
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 24 }}>
             <div>
-              <h4 style={{ margin: '0 0 8px 0', color: '#c19233' }}>Send via Mobile Wallets (bKash · Nagad · Rocket)</h4>
+              <h4 style={{ margin: '0 0 8px 0', color: '#c19233' }}>Send via Mobile Wallets — (bKash · Nagad · Rocket)</h4>
               <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
                 <CopyPayment
                   icon="/bkash.png"
@@ -41,10 +41,10 @@ export default function Donation() {
             </div>
 
             <div>
-              <h4 style={{ margin: '0 0 8px 0', color: '#c19233' }}>Bank Transfer — Meghna Bank (Account Details)</h4>
-              <div>
+              <h4 style={{ margin: '0 0 8px 0', color: '#c19233' }}>Bank Transfer — (Account Details)</h4>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
                 <CopyBankPayment
-                  icon="/bank.png"
+                  icon="/meghna_bank.jpg"
                   bank="Meghna Bank PLC"
                   account="710111100001247"
                   name="Sultanpur Dokkhinpara Jame Moshjid"
