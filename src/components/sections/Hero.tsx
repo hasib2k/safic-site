@@ -5,7 +5,7 @@ export default function Hero() {
       <div className="container hero-content">
         <h1>
           <span className="arabic">بِسْمِ اللَّهِ الرَّحْمَـٰنِ الرَّحِيمِ</span>
-          <div className="headline">Welcome to <span className="site-name">Sultanpur Al‑Falah Islamic Center</span></div>
+          <div className="headline" style={{ textShadow: 'none' }}>Welcome to <span className="site-name">Sultanpur Al‑Falah Islamic Center</span></div>
           <div className="sub" style={{ fontWeight: 'normal' }}>A mosque and community hub offering regular prayers, Quran classes, youth programs, and family support — serving Sultanpur and the Rangpur region with faith and service.</div>
         </h1>
         <div style={{ marginTop: 18, display: 'flex', gap: 10, justifyContent: 'center', flexWrap: 'wrap' }}>

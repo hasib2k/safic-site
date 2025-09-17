@@ -62,10 +62,28 @@ export function NextKhutbah() {
     statusText = `started ${fmt(absDiff)} ago`;
   }
 
-  const dfDate = new Intl.DateTimeFormat(undefined, { timeZone: 'Asia/Dhaka', weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' });
-  const dfTime = new Intl.DateTimeFormat(undefined, { timeZone: 'Asia/Dhaka', hour: 'numeric', minute: '2-digit', hour12: true });
-  const dateStr = dfDate.format(target);
-  const timeStr = dfTime.format(target);
+  // SSR-safe date formatting
+  const dateStr = formatDate(target);
+  const timeStr = formatTime(target);
+// Format date as 'Fri, 19 Sept 2025' (SSR-safe)
+function formatDate(date: Date) {
+  const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+  const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
+  const day = days[date.getDay()];
+  const d = date.getDate();
+  const m = months[date.getMonth()];
+  const y = date.getFullYear();
+  return `${day}, ${d} ${m} ${y}`;
+}
+// Format time as 'h:mm AM/PM' (SSR-safe)
+function formatTime(date: Date) {
+  let h = date.getHours();
+  const m = date.getMinutes();
+  const ampm = h >= 12 ? 'PM' : 'AM';
+  h = h % 12;
+  if (h === 0) h = 12;
+  return `${h}:${m.toString().padStart(2, '0')} ${ampm}`;
+}
 
   return (
     <div>

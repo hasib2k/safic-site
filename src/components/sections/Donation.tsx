@@ -2,7 +2,7 @@ import { CopyPayment, CopyBankPayment } from "./DonationUtilities";
 
 export default function Donation() {
   return (
-    <section id="donation" className="donation" style={{ paddingBottom: '16px', background: '#f8fafc' }}>
+    <section id="donation" className="donation" style={{ paddingBottom: '16px', background: '#ffffff' }}>
       <div className="container">
         <div style={{ textAlign: 'center', marginBottom: 16 }}>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 8 }}>

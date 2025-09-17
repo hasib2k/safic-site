@@ -2,7 +2,7 @@ import { ExpandableNewsCard, ExpandableNewsCard2, ExpandableNewsCard4 } from "./
 
 export default function News() {
   return (
-    <section id="news" className="news" style={{ background: '#f8fafc', padding: '24px 0' }}>
+    <section id="news" className="news" style={{ background: '#ffffff', padding: '24px 0' }}>
       <div className="container">
         <div style={{ textAlign: 'center', marginBottom: 16 }}>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 8 }}>

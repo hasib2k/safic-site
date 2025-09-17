@@ -43,7 +43,7 @@ export function ExpandableNewsCard() {
           className="card informative-news-card"
           key="latest-news"
           style={{
-            border: '1.5px solid #f3e7c7',
+            // border: '1.5px solid #f3e7c7',
             borderRadius: 14,
             boxShadow: '0 8px 32px 0 rgba(193,146,51,0.08)',
             background: expanded
@@ -90,7 +90,7 @@ export function ExpandableNewsCard() {
               borderRadius: 8,
               padding: '2px 10px',
               boxShadow: '0 2px 8px rgba(193,146,51,0.08)',
-              border: '1px solid #f3e7c7',
+              // border: '1px solid #f3e7c7',
               zIndex: 2
             }}>
               Sep 11, 2025
@@ -142,7 +142,7 @@ export function ExpandableNewsCard2() {
           className="card informative-news-card"
           key="construction-progress"
           style={{
-            border: '1.5px solid #f3e7c7',
+            // border: '1.5px solid #f3e7c7',
             borderRadius: 14,
             boxShadow: '0 8px 32px 0 rgba(193,146,51,0.08)',
             background: expanded
@@ -189,7 +189,7 @@ export function ExpandableNewsCard2() {
               borderRadius: 8,
               padding: '2px 10px',
               boxShadow: '0 2px 8px rgba(193,146,51,0.08)',
-              border: '1px solid #f3e7c7',
+              // border: '1px solid #f3e7c7',
               zIndex: 2
             }}>
               Sep 01, 2025
@@ -242,7 +242,7 @@ export function ExpandableNewsCard4() {
           className="card informative-news-card"
           key="structural-progress"
           style={{
-            border: '1.5px solid #f3e7c7',
+            // border: '1.5px solid #f3e7c7',
             borderRadius: 14,
             boxShadow: '0 8px 32px 0 rgba(193,146,51,0.08)',
             background: expanded
@@ -289,7 +289,7 @@ export function ExpandableNewsCard4() {
               borderRadius: 8,
               padding: '2px 10px',
               boxShadow: '0 2px 8px rgba(193,146,51,0.08)',
-              border: '1px solid #f3e7c7',
+              // border: '1px solid #f3e7c7',
               zIndex: 2
             }}>
               Aug 15, 2025

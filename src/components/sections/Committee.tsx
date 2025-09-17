@@ -2,7 +2,7 @@ import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
 export default function Committee() {
   return (
-    <section id="committee" className="committee" style={{ background: '#f8fafc', padding: '40px 0' }}>
+    <section id="committee" className="committee" style={{ background: '#ffffff', padding: '40px 0' }}>
       <div className="container" style={{ maxWidth: 1200, margin: '0 auto', padding: '0 20px' }}>
         <div style={{ textAlign: 'center', marginBottom: 32 }}>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 12 }}>

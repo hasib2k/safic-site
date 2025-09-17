@@ -79,7 +79,7 @@ section[id] { scroll-margin-top: 80px; }
 .btn-dark { background: var(--dark); color: #fff; }
 .btn-gold { background: var(--gold); color: #fff; }
 .btn-light-outline { background: transparent; border-color: #ddd; color: #333; }
-.btn-donate { background: var(--accent-color); color: #142235; border-radius: 8px; height: 44px; padding: 0 20px; border: 1px solid rgba(0,0,0,0.03); box-shadow: 0 2px 6px rgba(0,0,0,0.06); font-weight: 700; }
+.btn-donate { background: var(--accent-color); color: #142235; border-radius: 8px; height: 36px; padding: 0 16px; border: 1px solid rgba(0,0,0,0.03); box-shadow: 0 2px 6px rgba(0,0,0,0.06); font-weight: 700; }
 .btn-donate:hover { filter: brightness(0.95); }
 .btn-donate:focus-visible { outline: 3px solid rgba(255,209,102,0.18); outline-offset: 2px; }
 

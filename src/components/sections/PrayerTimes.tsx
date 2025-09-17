@@ -39,6 +39,16 @@ function getNextPrayer(now: Date) {
   return { ...fajr, date: nextFajr, diff: nextFajr.getTime() - now.getTime() };
 }
 
+// Format time as 'h:mm AM/PM' (always uppercase, SSR-safe)
+function formatTime(date: Date) {
+  let h = date.getHours();
+  const m = date.getMinutes();
+  const ampm = h >= 12 ? 'PM' : 'AM';
+  h = h % 12;
+  if (h === 0) h = 12;
+  return `${h}:${m.toString().padStart(2, '0')} ${ampm}`;
+}
+
 export default function PrayerTimes() {
   const [now, setNow] = useState(new Date());
   useEffect(() => {
@@ -51,7 +61,7 @@ export default function PrayerTimes() {
   if (minutes > 0) countdown = `in ${minutes}m`;
   else countdown = 'now';
   return (
-    <section id="prayer" className="prayer" style={{ paddingTop: 8, paddingBottom: 20, background: '#f8fafc' }}>
+    <section id="prayer" className="prayer" style={{ paddingTop: 8, paddingBottom: 20, background: '#ffffff' }}>
       <div style={{ textAlign: 'center', marginBottom: 24 }}>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 12 }}>
           <h3 style={{ margin: 0, letterSpacing: 0.5 }}>Prayer Times</h3>
@@ -157,7 +167,7 @@ export default function PrayerTimes() {
           {/* Dynamic Next Prayer Section */}
           <div style={{ marginTop: 12, marginBottom: 0, fontSize: 14, fontWeight: 500, lineHeight: 1.5 }}>
             <div>Next Prayer</div>
-            <div>{next.name} — {next.date.toLocaleTimeString([], { hour: 'numeric', minute: '2-digit', hour12: true })}</div>
+            <div>{next.name} — {formatTime(next.date)}</div>
             <div>{countdown}</div>
           </div>
           <div style={{ width: '100%', margin: '6px 0 0 0' }}>

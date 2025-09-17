@@ -9,7 +9,7 @@ export default function Gallery() {
   ];
 
   return (
-    <section id="gallery" className="gallery" style={{ background: '#f8fafc', padding: '16px 0 40px 0' }}>
+    <section id="gallery" className="gallery" style={{ background: '#ffffff', padding: '16px 0 40px 0' }}>
       <div className="container" style={{ maxWidth: 1200, margin: '0 auto', padding: '0 20px' }}>
         <div style={{ textAlign: 'center', marginBottom: 16 }}>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 8 }}>

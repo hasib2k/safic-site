@@ -2,7 +2,7 @@ import { FaMapMarkerAlt, FaPhoneAlt, FaClock } from "react-icons/fa";
 
 export default function About() {
   return (
-    <section id="about" className="welcome" style={{ paddingTop: 20, paddingBottom: 12, background: '#f8fafc' }}>
+    <section id="about" className="welcome" style={{ paddingTop: 20, paddingBottom: 12, background: '#ffffff' }}>
       <div style={{ textAlign: 'center', marginBottom: 16 }}>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 8 }}>
           <h3 style={{ margin: 0 }}>About</h3>
