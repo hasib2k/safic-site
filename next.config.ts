@@ -7,13 +7,7 @@ const nextConfig: NextConfig = {
   // Optimize for production
   poweredByHeader: false,
   
-  // Configure webpack to handle potential client-server mismatches
-  webpack: (config) => {
-    config.resolve.fallback = {
-      ...config.resolve.fallback,
-    };
-    return config;
-  },
+  // Turbopack does not use webpack config
 };
 
 export default nextConfig;

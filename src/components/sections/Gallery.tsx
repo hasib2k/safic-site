@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Gallery() {
   const images = [
     "/hero.jpg",
@@ -53,9 +55,11 @@ export default function Gallery() {
                   margin: 0
                 }}
               >
-                <img 
+                <Image 
                   src={image} 
                   alt={`Gallery image ${index + 1}`}
+                  width={110}
+                  height={80}
                   style={{ 
                     width: '100%', 
                     height: '100%', 

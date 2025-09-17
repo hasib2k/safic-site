@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { FaClock, FaMapMarkerAlt } from "react-icons/fa";
+import { FaMapMarkerAlt } from "react-icons/fa";
+import Image from 'next/image';
 
 
 export default function Events() {
@@ -27,7 +28,6 @@ export default function Events() {
             title="Weekly Jumu'ah & Special Lecture"
             summary="Join our congregational Jumu'ah prayer followed by a short lecture on community service and spiritual development."
             location="Sultanpur Al-Falah Islamic Center"
-            linkText="Details"
             linkHref="/events/jumuah-lecture"
           />
           {/* Event 2 */}
@@ -40,7 +40,6 @@ export default function Events() {
             title="Community Volunteer & Clean-up"
             summary="Volunteers gather to tidy the mosque grounds, assist with minor repairs, and prepare the center for upcoming events. All ages welcome. "
             location="Sultanpur Al-Falah Islamic Center"
-            linkText="Sign up"
             linkHref="/events/volunteer-cleanup"
           />
           {/* Event 3 */}
@@ -53,7 +52,6 @@ export default function Events() {
             title="Quran Learning Workshop"
             summary="A short workshop for new learners covering basic tajweed rules and recitation techniques. Free to attend — registration recommended."
             location="Sultanpur Al-Falah Islamic Center"
-            linkText="Register"
             linkHref="/events/quran-workshop"
           />
         </div>
@@ -76,10 +74,9 @@ type EventCardProps = {
   title: string;
   summary: string;
   location: string;
-  linkText: string;
   linkHref: string;
 };
-function EventCard({ image, alt, date, day, time, title, summary, location, linkText, linkHref }: EventCardProps) {
+function EventCard({ image, alt, date, day, time, title, summary, location, linkHref }: EventCardProps) {
   return (
     <Link href={linkHref} style={{ textDecoration: 'none', color: 'inherit' }}>
       <article
@@ -120,7 +117,7 @@ function EventCard({ image, alt, date, day, time, title, summary, location, link
         </div>
         {/* Image */}
         <div className="media" style={{ width: '100%', height: 150, overflow: 'hidden', borderTopLeftRadius: 14, borderTopRightRadius: 14, position: 'relative' }}>
-          <img src={image} alt={alt} className="cover" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', filter: 'brightness(0.92)' }} />
+          <Image src={image} alt={alt} width={400} height={150} className="cover" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', filter: 'brightness(0.92)' }} />
           {/* Date badge */}
           <div style={{
             position: 'absolute',

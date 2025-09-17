@@ -1,5 +1,7 @@
 import { FaMapMarkerAlt, FaPhoneAlt, FaClock } from "react-icons/fa";
 
+import Image from "next/image";
+
 export default function About() {
   return (
     <section id="about" className="welcome" style={{ paddingTop: 20, paddingBottom: 12, background: '#ffffff' }}>
@@ -16,7 +18,7 @@ export default function About() {
         {/* Left: Photo with highlighted stats */}
         <div style={{ position: 'relative' }}>
           <div style={{ borderRadius: 12, overflow: 'hidden', boxShadow: 'none', border: 'none', background: 'transparent' }}>
-            <img src="/about2.png" alt="Interior" className="cover" style={{ display: 'block', width: '100%', height: 360, objectFit: 'cover', border: 'none', filter: 'none', transform: 'none' }} />
+            <Image src="/about2.png" alt="Interior" width={500} height={360} className="cover" style={{ display: 'block', width: '100%', height: 360, objectFit: 'cover', border: 'none', filter: 'none', transform: 'none' }} />
           </div>
         </div>
 

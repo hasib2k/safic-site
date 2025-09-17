@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
+import Image from 'next/image';
 
 type CardWrapperProps = {
   children: (expanded: boolean, setExpanded: (v: boolean) => void) => React.ReactNode;
@@ -38,7 +39,7 @@ function CardWrapper({ children }: CardWrapperProps) {
 export function ExpandableNewsCard() {
   return (
     <CardWrapper>
-      {(expanded: boolean, setExpanded: (v: boolean) => void) => (
+      {(expanded: boolean) => (
         <article
           className="card informative-news-card"
           key="latest-news"
@@ -77,7 +78,7 @@ export function ExpandableNewsCard() {
           </div>
           {/* Image */}
           <div className="media" style={{ width: '100%', height: 120, overflow: 'hidden', borderTopLeftRadius: 14, borderTopRightRadius: 14, position: 'relative' }}>
-            <img src="/news-1.jpg" alt="Roof Casting Work Begins" className="cover" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', filter: expanded ? 'brightness(0.95)' : 'brightness(0.85)' }} />
+            <Image src="/news-1.jpg" alt="Roof Casting Work Begins" width={400} height={120} className="cover" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', filter: expanded ? 'brightness(0.95)' : 'brightness(0.85)' }} />
             {/* Date badge */}
             <div style={{
               position: 'absolute',
@@ -137,7 +138,7 @@ export function ExpandableNewsCard() {
 export function ExpandableNewsCard2() {
   return (
     <CardWrapper>
-      {(expanded: boolean, setExpanded: (v: boolean) => void) => (
+      {(expanded: boolean) => (
         <article
           className="card informative-news-card"
           key="construction-progress"
@@ -176,7 +177,7 @@ export function ExpandableNewsCard2() {
           </div>
           {/* Image */}
           <div className="media" style={{ width: '100%', height: 120, overflow: 'hidden', borderTopLeftRadius: 14, borderTopRightRadius: 14, position: 'relative' }}>
-            <img src="/news-2.jpg" alt="Construction Work Progresses" className="cover" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', filter: expanded ? 'brightness(0.95)' : 'brightness(0.85)' }} />
+            <Image src="/news-2.jpg" alt="Construction Work Progresses" width={400} height={120} className="cover" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', filter: expanded ? 'brightness(0.95)' : 'brightness(0.85)' }} />
             {/* Date badge */}
             <div style={{
               position: 'absolute',
@@ -237,7 +238,7 @@ export function ExpandableNewsCard2() {
 export function ExpandableNewsCard4() {
   return (
     <CardWrapper>
-      {(expanded: boolean, setExpanded: (v: boolean) => void) => (
+      {(expanded: boolean) => (
         <article
           className="card informative-news-card"
           key="structural-progress"
@@ -276,7 +277,7 @@ export function ExpandableNewsCard4() {
           </div>
           {/* Image */}
           <div className="media" style={{ width: '100%', height: 120, overflow: 'hidden', borderTopLeftRadius: 14, borderTopRightRadius: 14, position: 'relative' }}>
-            <img src="/news-3.jpg" alt="Structural Progress at Sultanpur" className="cover" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', filter: expanded ? 'brightness(0.95)' : 'brightness(0.85)' }} />
+            <Image src="/news-3.jpg" alt="Structural Progress at Sultanpur" width={400} height={120} className="cover" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', filter: expanded ? 'brightness(0.95)' : 'brightness(0.85)' }} />
             {/* Date badge */}
             <div style={{
               position: 'absolute',

@@ -1,5 +1,7 @@
 "use client";
 
+import Image from 'next/image';
+
 interface HeaderProps {
   mobileMenuOpen: boolean;
   setMobileMenuOpen: (open: boolean) => void;
@@ -12,10 +14,12 @@ export default function Header({ mobileMenuOpen, setMobileMenuOpen }: HeaderProp
       <header className="site-header">
         <div className="container header-inner">
           <a className="brand" href="#home">
-            <img
+            <Image
               className="brand-img"
               src="/logo.png"
               alt="SAFIC logo"
+              width={64}
+              height={64}
               onError={(e) => { (e.currentTarget as HTMLImageElement).src = 'https://picsum.photos/seed/logo/64/64'; }}
             />
             <div className="brand-text" style={{ display: 'flex', flexDirection: 'column', lineHeight: 1 }}>

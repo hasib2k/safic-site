@@ -1,4 +1,5 @@
 import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import Image from 'next/image';
 
 export default function Committee() {
   return (
@@ -32,9 +33,11 @@ export default function Committee() {
             textAlign: 'center'
           }}>
             <div style={{ height: 200, overflow: 'hidden', background: '#f8fafc' }}>
-              <img 
+              <Image 
                 src="/chairman.jpg" 
-                alt="Chairman" 
+                alt="Chairman"
+                width={320}
+                height={200}
                 style={{ 
                   width: '100%', 
                   height: '100%', 
@@ -116,9 +119,11 @@ export default function Committee() {
             textAlign: 'center'
           }}>
             <div style={{ height: 200, overflow: 'hidden', background: '#f8fafc' }}>
-              <img 
+              <Image 
                 src="/imam.jpg" 
-                alt="Imam" 
+                alt="Imam"
+                width={320}
+                height={200}
                 style={{ 
                   width: '100%', 
                   height: '100%', 
@@ -200,9 +205,11 @@ export default function Committee() {
             textAlign: 'center'
           }}>
             <div style={{ height: 200, overflow: 'hidden', background: '#f8fafc' }}>
-              <img 
-                src="/secretary.jpg" 
-                alt="Secretary" 
+              <Image 
+                src="/imam.jpg" 
+                alt="Secretary"
+                width={320}
+                height={200}
                 style={{ 
                   width: '100%', 
                   height: '100%', 
@@ -284,9 +291,11 @@ export default function Committee() {
             textAlign: 'center'
           }}>
             <div style={{ height: 200, overflow: 'hidden', background: '#f8fafc' }}>
-              <img 
-                src="/treasurer.jpg" 
-                alt="Treasurer" 
+              <Image 
+                src="/imam.jpg" 
+                alt="Treasurer"
+                width={320}
+                height={200}
                 style={{ 
                   width: '100%', 
                   height: '100%', 
@@ -368,9 +377,11 @@ export default function Committee() {
             textAlign: 'center'
           }}>
             <div style={{ height: 200, overflow: 'hidden', background: '#f8fafc' }}>
-              <img 
-                src="/education.jpg" 
-                alt="Education Coordinator" 
+              <Image 
+                src="/imam.jpg" 
+                alt="Education Coordinator"
+                width={320}
+                height={200}
                 style={{ 
                   width: '100%', 
                   height: '100%', 
@@ -452,9 +463,11 @@ export default function Committee() {
             textAlign: 'center'
           }}>
             <div style={{ height: 200, overflow: 'hidden', background: '#f8fafc' }}>
-              <img 
-                src="/outreach.jpg" 
-                alt="Community Outreach" 
+              <Image 
+                src="/imam.jpg" 
+                alt="Community Outreach"
+                width={320}
+                height={200}
                 style={{ 
                   width: '100%', 
                   height: '100%', 

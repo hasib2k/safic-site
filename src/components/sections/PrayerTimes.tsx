@@ -1,6 +1,7 @@
 import { FaClock } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import { NextKhutbah } from "./PrayerUtilities";
+import Image from 'next/image';
 
 function getPrayerTimes() {
   // Static for now, could be dynamic or fetched
@@ -50,16 +51,25 @@ function formatTime(date: Date) {
 }
 
 export default function PrayerTimes() {
-  const [now, setNow] = useState(new Date());
+  const [now, setNow] = useState<Date | null>(null);
   useEffect(() => {
+    setNow(new Date());
     const t = setInterval(() => setNow(new Date()), 60000);
     return () => clearInterval(t);
   }, []);
+  if (!now) return null;
   const next = getNextPrayer(now);
   const minutes = Math.max(0, Math.floor(next.diff / 60000));
   let countdown = '';
-  if (minutes > 0) countdown = `in ${minutes}m`;
-  else countdown = 'now';
+  if (minutes > 0) {
+    const h = Math.floor(minutes / 60);
+    const m = minutes % 60;
+    if (h > 0) {
+      countdown = `in ${h}h ${m}m`;
+    } else {
+      countdown = `in ${m}m`;
+    }
+  } else countdown = 'now';
   return (
     <section id="prayer" className="prayer" style={{ paddingTop: 8, paddingBottom: 20, background: '#ffffff' }}>
       <div style={{ textAlign: 'center', marginBottom: 24 }}>
@@ -196,7 +206,7 @@ export default function PrayerTimes() {
           <h4 style={{ margin: '0 0 6px 0', color: '#b5842d', fontSize: 18, letterSpacing: 0.2, fontWeight: 700, alignSelf: 'flex-start' }}>Khutib of the Next Jumu&apos;ah</h4>
           <div style={{ display: 'flex', gap: 10, alignItems: 'center', marginBottom: 0, alignSelf: 'flex-start' }}>
             <div style={{ width: 56, height: 56, borderRadius: 12, overflow: 'hidden', marginRight: 8, boxShadow: '0 2px 8px rgba(193,146,51,0.08)', border: '2px solid #e5e7eb' }}>
-              <img src="/imam.jpg" alt="Speaker" className="cover" />
+              <Image src="/imam.jpg" alt="Speaker" width={56} height={56} className="cover" />
             </div>
             <div style={{ flex: 1 }}>
               <div style={{ color: '#000000', fontWeight: 700, fontSize: 15, marginBottom: 2 }}>Shaykh Atik Rahman</div>
