@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { FaClock, FaMapMarkerAlt } from "react-icons/fa";
 import Link from "next/link";
+import Image from "next/image";
 
 const events = [
 	{
@@ -66,7 +67,7 @@ export default function EventDetailsPage({
 				}}
 			>
 				<div style={{ textAlign: 'right', marginBottom: 18 }}>
-					   <a
+					   <Link
 						   href="/"
 						   className="btn btn-light"
 						   style={{
@@ -83,11 +84,13 @@ export default function EventDetailsPage({
 						   }}
 					   >
 						   ← Back to Home
-					   </a>
+					   </Link>
 				</div>
-				<img
+				<Image
 					src={event.image}
 					alt={event.title}
+					width={800}
+					height={260}
 					style={{
 						width: "100%",
 						height: 260,

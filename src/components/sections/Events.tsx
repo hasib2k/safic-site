@@ -58,9 +58,9 @@ export default function Events() {
           />
         </div>
         <div style={{ textAlign: 'center', marginTop: 28 }}>
-          <a href="/events" className="btn btn-light" style={{ fontWeight: 600, fontSize: 16, padding: '10px 32px', borderRadius: 8, border: '1px solid #c19233', color: '#b5842d', background: '#fff', textDecoration: 'none', boxShadow: '0 2px 8px rgba(193,146,51,0.08)' }}>
+          <Link href="/events" className="btn btn-light" style={{ fontWeight: 600, fontSize: 16, padding: '10px 32px', borderRadius: 8, border: '1px solid #c19233', color: '#b5842d', background: '#fff', textDecoration: 'none', boxShadow: '0 2px 8px rgba(193,146,51,0.08)' }}>
             View All Events
-          </a>
+          </Link>
         </div>
       </div>
     </section>
